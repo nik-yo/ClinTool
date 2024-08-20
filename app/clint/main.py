@@ -1,5 +1,5 @@
 import click
-from clint.network.http import http
+from clint.network.http import http_
 from clint.network.https import https
 from clint.uuid import uuid_
 
@@ -7,6 +7,6 @@ from clint.uuid import uuid_
 def cli():
   pass
 
-cli.add_command(http)
+cli.add_command(http_)
 cli.add_command(https)
 cli.add_command(uuid_)

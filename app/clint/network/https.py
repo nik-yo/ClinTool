@@ -21,7 +21,7 @@ def post_(ctx, url, data):
   n_url = normalize_url(url)
   ctx.invoke(post, url=n_url, data=data)
 
-@http.command('put')
+@https.command('put')
 @click.argument('url')
 @click.option('--data', default=None, metavar='', help='Payload for HTTP PUT')
 @click.pass_context
@@ -29,28 +29,28 @@ def put_(ctx, url, data):
   n_url = normalize_url
   ctx.invoke(put, url=n_url, data=data)
 
-@http.command('delete')
+@https.command('delete')
 @click.argument('url')
 @click.pass_context
 def delete_(ctx, url):
   n_url = normalize_url
   ctx.invoke(delete, url=n_url)
 
-@http.command('head')
+@https.command('head')
 @click.argument('url')
 @click.pass_context
-def head_(ctx, url)
+def head_(ctx, url):
   n_url = normalize_url
   ctx.invoke(head, url=n_url)
 
-@http.command('options')
+@https.command('options')
 @click.argument('url')
 @click.pass_context
 def options_(ctx, url):
   n_url = normalize_url(url)
   ctx.invoke(options, url=n_url)
 
-@http.command('patch')
+@https.command('patch')
 @click.argument('url')
 @click.option('--data', default=None, metavar='', help='Payload for HTTP PATCH')
 @click.pass_context

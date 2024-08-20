@@ -35,6 +35,10 @@ clint http patch example.com
 clint https <http_verb> <url>
 clint https get example.com
 
+#### HTTP server
+clint http serve
+clint http serve --port <port> # Port default: 8000
+
 ### Generate UUID
 clint uuid gen \
 clint uuid gen --version <version> # Supported version values: 1, 3, 4, 5. Default: 4 \
