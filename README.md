@@ -19,6 +19,22 @@ clint http get <url> \
 clint http get example.com \
 clint http get http://example.com
 
+clint http post example.com --data '{"test":"data"}'
+
+clint http put example.com --data <data>
+
+clint http delete example.com
+
+clint http head example.com
+
+clint http options example.com
+
+clint http patch example.com
+
+#### HTTPS
+clint https <http_verb> <url>
+clint https get example.com
+
 ### Generate UUID
 clint uuid gen \
 clint uuid gen --version <version> # Supported version values: 1, 3, 4, 5. Default: 4 \
