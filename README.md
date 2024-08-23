@@ -43,3 +43,7 @@ clint http serve --port <port> # Port default: 8000
 clint uuid gen \
 clint uuid gen --version <version> # Supported version values: 1, 3, 4, 5. Default: 4 \
 clint uuid gen --version 5
+
+### Lettercase
+clint lowercase <text>
+clint uppercase <text>
