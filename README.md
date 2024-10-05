@@ -15,9 +15,11 @@ A simple cli commands to assist with development process.
 ## Examples
 
 ### Network call
-clint http get <url> \
-clint http get example.com \
-clint http get http://example.com
+clint http get <span style="color: red;">url</span>
+
+examples: 
+- clint http get example.com
+- clint http get http://example.com
 
 clint http post example.com --data '{"test":"data"}'
 
@@ -32,18 +34,21 @@ clint http options example.com
 clint http patch example.com
 
 #### HTTPS
-clint https <http_verb> <url>
-clint https get example.com
+clint https <span style="color: red;">http_verb</span> <span style="color: red;">url</span>
+
+eg: clint https get example.com
 
 #### HTTP server
 clint http serve
-clint http serve --port <port> # Port default: 8000
+eg: clint http serve --port <span style="color: red;">port</span> <span style="color: green;"># Port default: 8000</span>
 
 ### Generate UUID
 clint uuid gen \
-clint uuid gen --version <version> # Supported version values: 1, 3, 4, 5. Default: 4 \
-clint uuid gen --version 5
+
+examples: 
+- clint uuid gen --version <span style="color: red;">version</span> <span style="color: green;"># Supported version values: 1, 3, 4, 5. Default: 4</span>
+- clint uuid gen --version 5
 
 ### Lettercase
-clint lowercase <text>
-clint uppercase <text>
+clint lowercase <span style="color: red;">text</span> \
+clint uppercase <span style="color: red;">text</span>
